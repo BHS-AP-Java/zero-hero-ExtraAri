@@ -16,9 +16,9 @@ public class App {
   }
 
   public static void date10_28() {
-    Cake newCake = new Cake();
-    newCake.growCake(20, 8, 1);
-    newCake.draw();
+    Cake myCake = new Cake();
+    myCake.growCake(20, 8, 1);
+    myCake.draw();
   }
 
   public static void date10_27() {
@@ -27,4 +27,9 @@ public class App {
     Cake bDay = bob.bakes(5, "Suzzie");
     bDay.draw(t);
   }
+  int offset = (myCake.getWidth() - myTable.getWidth()) / 2;if(offset<0)
+  {/* do the right thing when myTable is bigger */}
+else{/* do the right thing when the cake is bigger */ }
+
 }
+
