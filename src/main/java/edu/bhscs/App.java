@@ -22,16 +22,12 @@ public class App {
   }
 
   public static void date10_27() {
-    Baker bob = new Baker("Bob");
-    Table t = new Table(5, 4);
-    Cake bDay = bob.bakes(5, "Suzzie");
-    bDay.draw(t);
 
+    /*
+     * Baker bob = new Baker("Bob"); Table t = new Table(5, 4); Cake bDay = bob.bakes(5, "Suzzie");
+     * bDay.draw(t);
+     */
   }
-  public void date11_3(){
-    int offset = (myCake.getWidth() - myTable.getWidth()) / 2;
-  if (offset < 0) {
-    /* do the right thing when myTable is bigger */ } else {
-    /* do the right thing when the cake is bigger */ }
-  }
+
 }
+
