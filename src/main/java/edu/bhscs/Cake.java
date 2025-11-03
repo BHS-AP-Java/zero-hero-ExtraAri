@@ -1,4 +1,5 @@
 package edu.bhscs;
+
 /// MAKE IT SO IT IS A LOOP SO IT PRINTS MULTIPLE TIMES - DONE
 /// MAKE IT WHEN IT PRINTS, IT SUCCESSFULLY PRINTS A CAKE -DONE
 public class Cake {
@@ -33,7 +34,8 @@ public class Cake {
     this.frosting = "yumm";
   }
 
-  public Cake() {};
+  public Cake() {}
+  ;
 
   // METHODS
 

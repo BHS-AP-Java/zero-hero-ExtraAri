@@ -12,9 +12,6 @@ public class Baker {
     this.name = name;
   }
 
-
-
-
   // METHODS
 
   public void learn(int amount) {
@@ -25,8 +22,6 @@ public class Baker {
    * Cake bakeCake() { String answer = this.p.giveAnswer("what cake do you you want?");
    * this.skill++; return new Cake(answer, this.f, this.skill); }
    */
-
-
 
   Cake bakes(int size, String buyerName) {
     this.skill++;
