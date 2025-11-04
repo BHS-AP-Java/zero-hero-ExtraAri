@@ -22,12 +22,9 @@ public class App {
   }
 
   public static void date10_27() {
-
-    /*
-     * Baker bob = new Baker("Bob"); Table t = new Table(5, 4); Cake bDay = bob.bakes(5, "Suzzie");
-     * bDay.draw(t);
-     */
+    Baker bob = new Baker("Bob");
+    Table t = new Table(5, 4);
+    Cake bDay = bob.bakes(5, "Suzzie");
+    bDay.draw(t);
   }
-
 }
-

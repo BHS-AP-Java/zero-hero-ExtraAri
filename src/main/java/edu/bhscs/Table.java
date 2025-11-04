@@ -4,11 +4,16 @@ public class Table {
   // fields and properties
   int counter;
   int legs;
-
+  int Width;
   // constructor
   public Table(int counter, int legs) {
     this.counter = counter;
     this.legs = legs;
+  }
+  /////////////////////
+  /// methods
+  public int getWidth(){
+    return this.Width;
   }
 
   public void draw() {

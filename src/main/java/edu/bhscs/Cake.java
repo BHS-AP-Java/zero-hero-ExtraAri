@@ -1,5 +1,8 @@
 package edu.bhscs;
 
+/// CREATE A FUNCTIONING CAKE CLASS THAT WORKS WITH THE MAIN CLASS - DONE
+/// WHAT I WANT TO DO TODAY IS CREATE AN X Y AND Z AXIS FOR A CAKE - DONE
+/// MAKE IT PRINT SOMETHING FOR THAT CAKE - DONE
 /// MAKE IT SO IT IS A LOOP SO IT PRINTS MULTIPLE TIMES - DONE
 /// MAKE IT WHEN IT PRINTS, IT SUCCESSFULLY PRINTS A CAKE -DONE
 public class Cake {
@@ -8,6 +11,7 @@ public class Cake {
   String color;
   int weight;
   String flavor;
+
   int quality;
   int price;
   // dimensions of a cake
@@ -16,6 +20,7 @@ public class Cake {
   int x;
   int y;
   int z;
+  int width;
 
   // I have to make a constructor
   public Cake(int skill, int size, String buyerName) {
@@ -25,7 +30,6 @@ public class Cake {
 
   public Cake(String ingredient, int skill, int size, int height) {
     // CONSTRUCTOR
-
     this.weight = 10;
     this.quality = skill;
     this.size = size;
@@ -33,9 +37,23 @@ public class Cake {
     this.color = ingredient;
     this.frosting = "yumm";
   }
+  void centeringMath(Table t){
+    int cakeWidth = this.width;
+    int tableWidth = t.getWidth();
+    int offset = (cakeWidth - tableWidth) -2;
+    int tableOffset = 0;
+    int cakeOffset = 0;
 
-  public Cake() {}
-  ;
+    if(cakeWidth < tableWidth){
+      tableOffset = 0;
+      cakeOffset = Math.abs(offset);
+    }else{
+      cakeOffset = 0;
+      tableOffset = Math.abs(Offset);
+    }
+  }
+
+  public Cake() {};
 
   // METHODS
 
@@ -88,6 +106,16 @@ public class Cake {
       }
       System.out.println("/");
     }
+  }
+
+  public void draw(Table t) {
+    this.draw( centeringMath(t));
+    t.draw( centeringMath(t));
+
+
+
+
+
 
 
 
