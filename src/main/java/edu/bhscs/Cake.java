@@ -21,7 +21,7 @@ public class Cake {
   int y;
   int z;
   int width;
-
+  int cakeOffset;
   // I have to make a constructor
   public Cake(int skill, int size, String buyerName) {
     this.size = skill + 2;
@@ -37,23 +37,27 @@ public class Cake {
     this.color = ingredient;
     this.frosting = "yumm";
   }
-  void centeringMath(Table t){
+
+  void centeringMath(Table t) {
     int cakeWidth = this.width;
     int tableWidth = t.getWidth();
-    int offset = (cakeWidth - tableWidth) -2;
+    int offset = (cakeWidth - tableWidth) - 2;
     int tableOffset = 0;
     int cakeOffset = 0;
 
-    if(cakeWidth < tableWidth){
+    if (cakeWidth < tableWidth) {
       tableOffset = 0;
       cakeOffset = Math.abs(offset);
-    }else{
+    } else {
       cakeOffset = 0;
-      tableOffset = Math.abs(Offset);
+      tableOffset = Math.abs(offset);
     }
+      this.cakeOffset = cakeOffset;
+      t.tableOffset = tableOffset;
   }
 
-  public Cake() {};
+  public Cake() {}
+  ;
 
   // METHODS
 
@@ -88,7 +92,11 @@ public class Cake {
   /// ||||||||| ######### /
   /// ||||||||| ######### /
   public void draw() {
+
     for (int y = 0; y < this.y; y++) {
+      for (int cakeOffset = 0; cakeOffset < this.cakeOffset; cakeOffset++) {
+        System.out.print(" ");
+      }
       for (int x = 0; x < this.x; x++) {
         System.out.print("#");
       }
@@ -97,9 +105,10 @@ public class Cake {
       }
       System.out.println(" ");
     }
+
     for (int i = 0; i < 3; i++) {
       for (int x = 0; x < this.x; x++) {
-        System.out.print("#");
+  System.out.print("#");
       }
       for (int w = i; w < 2; w++) {
         System.out.print(" ");
@@ -109,15 +118,8 @@ public class Cake {
   }
 
   public void draw(Table t) {
-    this.draw( centeringMath(t));
-    t.draw( centeringMath(t));
-
-
-
-
-
-
-
-
+   centeringMath(t);
+    this.draw();
+    t.draw();
   }
 }

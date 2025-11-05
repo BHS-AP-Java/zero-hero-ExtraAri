@@ -5,14 +5,19 @@ public class Table {
   int counter;
   int legs;
   int Width;
+  int legwidth;
+  int tableOffset;
+
   // constructor
-  public Table(int counter, int legs) {
+  public Table(int counter, int legs,int legwidth) {
     this.counter = counter;
     this.legs = legs;
+    this.legwidth = legwidth;
   }
+
   /////////////////////
   /// methods
-  public int getWidth(){
+  public int getWidth() {
     return this.Width;
   }
 
@@ -27,8 +32,13 @@ public class Table {
     System.out.println();
     for (int z = 0; z < this.legs; z++) {
       for (int r = 0; r < this.counter; r++) {
-        System.out.print(" [-] ");
-        System.out.print(" ");
+        System.out.print("[" );
+        for (int s = 0; s<this.legwidth; s++ ){
+          System.out.print("-");
+        }
+
+        System.out.print("]");
+        System.out.print("  ");
       }
       System.out.println();
     }
