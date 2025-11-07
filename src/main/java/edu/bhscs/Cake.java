@@ -22,6 +22,7 @@ public class Cake {
   int z;
   int width;
   int cakeOffset;
+
   // I have to make a constructor
   public Cake(int skill, int size, String buyerName) {
     this.size = skill + 2;
@@ -52,8 +53,8 @@ public class Cake {
       cakeOffset = 0;
       tableOffset = Math.abs(offset);
     }
-      this.cakeOffset = cakeOffset;
-      t.tableOffset = tableOffset;
+    this.cakeOffset = cakeOffset;
+    t.tableOffset = tableOffset;
   }
 
   public Cake() {}
@@ -94,7 +95,7 @@ public class Cake {
   public void draw() {
 
     for (int y = 0; y < this.y; y++) {
-      for (int cakeOffset = 0; cakeOffset < this.cakeOffset; cakeOffset++) {
+      for (int cakeOffset = 0; cakeOffset < 3; cakeOffset++) {
         System.out.print(" ");
       }
       for (int x = 0; x < this.x; x++) {
@@ -107,8 +108,11 @@ public class Cake {
     }
 
     for (int i = 0; i < 3; i++) {
+      for (int cakeOffset = 0; cakeOffset < 3; cakeOffset++) {
+        System.out.print(" ");
+      }
       for (int x = 0; x < this.x; x++) {
-  System.out.print("#");
+        System.out.print("#");
       }
       for (int w = i; w < 2; w++) {
         System.out.print(" ");
@@ -118,8 +122,7 @@ public class Cake {
   }
 
   public void draw(Table t) {
-   centeringMath(t);
-    this.draw();
+    centeringMath(t);
     t.draw();
   }
 }

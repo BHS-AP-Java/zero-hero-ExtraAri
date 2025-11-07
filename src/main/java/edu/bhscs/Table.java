@@ -9,7 +9,7 @@ public class Table {
   int tableOffset;
 
   // constructor
-  public Table(int counter, int legs,int legwidth) {
+  public Table(int counter, int legs, int legwidth) {
     this.counter = counter;
     this.legs = legs;
     this.legwidth = legwidth;
@@ -17,7 +17,7 @@ public class Table {
 
   /////////////////////
   /// methods
-  public int getWidth() {
+    public int getWidth() {
     return this.Width;
   }
 
@@ -32,8 +32,8 @@ public class Table {
     System.out.println();
     for (int z = 0; z < this.legs; z++) {
       for (int r = 0; r < this.counter; r++) {
-        System.out.print("[" );
-        for (int s = 0; s<this.legwidth; s++ ){
+        System.out.print("[");
+        for (int s = 0; s < this.legwidth; s++) {
           System.out.print("-");
         }
 
