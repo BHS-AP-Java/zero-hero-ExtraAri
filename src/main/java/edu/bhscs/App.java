@@ -17,7 +17,7 @@ public class App {
 
   public static void date10_28() {
     Cake newCake = new Cake();
-    newCake.growCake(20, 8, 1);
+    newCake.growCake(15, 4, 1);
     newCake.draw();
   }
 

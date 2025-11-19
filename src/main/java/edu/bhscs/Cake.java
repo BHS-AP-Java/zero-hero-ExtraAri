@@ -43,8 +43,8 @@ public class Cake {
     int cakeWidth = this.width;
     int tableWidth = t.getWidth();
     int offset = (cakeWidth - tableWidth) - 2;
-    int tableOffset = 0;
-    int cakeOffset = 0;
+    int tableOffset = tableWidth;
+    int cakeOffset = tableOffset;
 
     if (cakeWidth < tableWidth) {
       tableOffset = 0;
@@ -95,7 +95,7 @@ public class Cake {
   public void draw() {
 
     for (int y = 0; y < this.y; y++) {
-      for (int cakeOffset = 0; cakeOffset < 3; cakeOffset++) {
+      for (int cakeOffset = 0; cakeOffset < 4; cakeOffset++) {
         System.out.print(" ");
       }
       for (int x = 0; x < this.x; x++) {
@@ -108,7 +108,7 @@ public class Cake {
     }
 
     for (int i = 0; i < 3; i++) {
-      for (int cakeOffset = 0; cakeOffset < 3; cakeOffset++) {
+      for (int cakeOffset = 0; cakeOffset < 4; cakeOffset++) {
         System.out.print(" ");
       }
       for (int x = 0; x < this.x; x++) {

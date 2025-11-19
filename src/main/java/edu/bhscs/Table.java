@@ -17,7 +17,7 @@ public class Table {
 
   /////////////////////
   /// methods
-    public int getWidth() {
+  public int getWidth() {
     return this.Width;
   }
 
