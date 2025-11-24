@@ -1,13 +1,18 @@
-// Student name
-// class period
-// project name
-// date
-
-/*
- * DESCRIPTION:
- * INPUT:
- * OUTPUT:
- * EDGE CASE:
- */
-
 package edu.bhscs;
+
+public class Main {
+
+  public static void main(String[] args) {
+
+    Cake newCake = new Cake();
+    newCake.growCake(20, 8, 1);
+    newCake.draw();
+
+    System.out.println("Hello" + newCake);
+    /// ######################### |||||||----------------------------------
+    /// ######### ----
+    /// ######### ----
+    /// ######### ----
+    /// ######### ----
+  }
+}
